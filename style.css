@@ -20,7 +20,6 @@ body {
     height: 900px;
     display: flex;
     justify-content: space-around;
-    border: solid 1px red;
 }
 
 .personimg {
