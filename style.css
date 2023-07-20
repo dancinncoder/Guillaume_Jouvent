@@ -78,6 +78,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
     font-weight: 50px;
+    cursor: pointer;
 }
 
 .menu > a {
@@ -373,8 +374,10 @@ li {
     }
 
    .connect_button {
-        width: 150px;
+        width: 140px;
+        height: 60px;
         margin: 10px;
+        font-size: 0.9rem;
     }
 
     .aboutme_part2 {
@@ -385,4 +388,17 @@ li {
         font-size: 2rem;
     }
 
+    .wrapper img:first-child {
+        left: -34px;
+        height: 30px;
+    }
+    
+    .wrapper img:last-child {
+        right: -34px;
+        height: 30px;
+    }
+
+    ul.carousel {
+        padding-inline-start: 0;
+    }
 }
