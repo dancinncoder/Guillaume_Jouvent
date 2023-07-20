@@ -1,3 +1,9 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /*가로 스크롤 없애기*/
+}
+
 body {
     margin: 0 0 0 0;
 }
@@ -5,9 +11,16 @@ body {
 .intro_page {
     background-image: linear-gradient(to right, rgb(255, 87, 87) 0%, rgb(140, 82, 255) 100%);
     height: 900px;
-    width: 100;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.introbox {
+    height: 900px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    border: solid 1px red;
 }
 
 .personimg {
@@ -52,10 +65,12 @@ body {
 .brief_page {
     background-color: (255, 255, 255);
     height: 700px;
-    width: 100;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .menu {
@@ -139,7 +154,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
 }
 
 .carousel .card {
@@ -179,7 +194,7 @@ h1 {
 /* <a target="_blank" href="https://icons8.com/icon/61/forward">arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
 
 .wrapper img:first-child {
-    left: -22px;
+    left: -54px;
 }
 
 .wrapper img:last-child {
@@ -199,6 +214,11 @@ h1 {
     font-size: 0.9rem;
 }
 
+ul.carousel {
+    padding-inline-start: 16px;
+}
+
+
 li {
     list-style: disc;
 }
@@ -215,6 +235,155 @@ li {
 
 @media screen and (max-width: 700px) {
     .wrapper .carousel {
-        grid-auto-columns: 100%
+        grid-auto-columns: 100%;
     }
+}
+
+@media screen and (max-width:1300px) {
+    .intro_textbox {
+        margin: 0 0 0 0;
+    }
+    
+    .intro_textbox1 {
+        font-size: 1.4rem;
+    }
+
+    .intro_textbox2 {
+        font-size: 7rem;
+        
+    }
+
+    .intro_textbox3 {
+        font-size: 1.4rem;
+    }
+
+    .personimg {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .intro_textbox {
+        margin: 0 10px 0 0;
+    }
+
+    .intro_textbox1 {
+        font-size: 1rem;
+    }
+
+    .intro_textbox2 {
+        font-size: 3.5rem;
+    }
+
+    .intro_textbox3 {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+
+    .introbox {
+        justify-content: right;
+    }
+
+    .personimg {
+        height: 750px;
+        margin: 0 0 0 0;
+        position: absolute;
+        left: -150px;
+        display: block;
+    }
+
+    .menu {
+        font-size: 2rem;
+    }
+
+    .aboutme_part1 > h1 {
+        font-size: 3rem;
+    }
+
+    .aboutme_part1 {
+        margin-bottom: 30px;
+    }
+
+    .aboutme_part1 > div {
+        font-size: 0.8rem;
+        max-width: 400px;
+    }
+
+   .connect_button {
+        width: 180px;
+        margin: 10px;
+    }
+
+    .aboutme_part2 {
+        justify-content: center;
+    }
+}
+
+/* Phone Screen */
+@media screen and (max-width:480px) {
+    .intro_box {
+        justify-content: center;
+    }
+
+    .intro_textbox {
+        margin: 5px 5px 5px 5px;
+        position: absolute;
+        left: 1px;
+        top: -10px;
+
+    }
+
+    .intro_textbox1 {
+        font-size: 1rem;
+    }
+
+    .intro_textbox2 {
+        font-size: 3.5rem;
+    }
+
+    .intro_textbox3 {
+        font-size: 0.9rem;
+        max-width: 400px;
+    }
+
+    .personimg {
+        height: 650px;
+        width: 500px;
+        margin: 0 0 0 0;
+        padding: 0;
+        position: absolute;
+        left: -150px;
+        display: block;
+    }
+
+    .menu {
+        font-size: 1.1rem;
+    }
+
+    .aboutme_part1 > h1 {
+        font-size: 2rem;
+    }
+
+    .aboutme_part1 {
+        margin-bottom: 30px;
+    }
+
+    .aboutme_part1 > div {
+        font-size: 0.8rem;
+        max-width: 300px;
+    }
+
+   .connect_button {
+        width: 150px;
+        margin: 10px;
+    }
+
+    .aboutme_part2 {
+        justify-content: center;
+    }
+
+    .experience_title {
+        font-size: 2rem;
+    }
+
 }
