@@ -1,4 +1,17 @@
+let observer = new IntersectionObserver((e)=>{
+    //감시중 박스가 화면에 등장하면 여기 코드를 실행해줌
+    //e는 파라미터
+    e.forEach((box)=>{
+        if (box.isIntersecting) {
+            box.target.style.opacity = 1;
+        }
+    })
+})
 
+let h1 = document.querySelectorAll('h1')
+//특정 html 요소가 화면에 등장하는지 감시해줌
+observer.observe(h1[0])
+observer.observe(h1[1])
 
 const wrapper = document.querySelector(".wrapper");
 
@@ -86,17 +99,4 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 
-let observer = new IntersectionObserver((e)=>{
-    //감시중 박스가 화면에 등장하면 여기 코드를 실행해줌
-    //e는 파라미터
-    e.forEach((box)=>{
-        if (box.isIntersecting) {
-            box.target.style.opacity = 1;
-        }
-    })
-})
 
-let h1 = document.querySelectorAll('h1')
-//특정 html 요소가 화면에 등장하는지 감시해줌
-observer.observe(h1[0])
-observer.observe(h1[1])
