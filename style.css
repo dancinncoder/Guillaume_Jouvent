@@ -282,6 +282,49 @@ li {
     font-size: 1.2rem;
 }
 
+.skill_page {
+    background-color: #352E40;
+    height: 900px;
+    width: 100%;
+}
+
+.skill_box {
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill_box > h1 {
+    color: white;
+}
+
+.itskills_box {
+    display: none;
+}
+
+.softskills_box {
+    display: none;
+}
+
+.language_box {
+    background-color: #F8F8F8;
+    height: 50rem;
+    width: 100rem;
+    border-radius: 3px;
+}
+
+.battery_img {
+    height: 50px;
+    width: 100px;
+}
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
