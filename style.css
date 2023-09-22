@@ -1,7 +1,10 @@
+html {
+    scroll-behavior: smooth; 
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    /*가로 스크롤 없애기*/
 }
 
 body {
@@ -15,6 +18,7 @@ body {
     background-position: center;
     background-size: cover;
 }
+
 
 .introbox {
     height: 900px;
@@ -107,14 +111,22 @@ body {
 
 }
 
+.brief_page .menu {
+    overflow: hidden;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
+    font-size: 2.9rem;
     font-weight: 50px;
     cursor: pointer;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: white;
 }
+
 
 .menu > a {
     text-decoration: none;
@@ -137,7 +149,6 @@ body {
 .aboutme_textbox {
     height: 550px;
     width: 700px;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -176,6 +187,7 @@ h1 {
     font-weight: 800;
     background-image: linear-gradient(to right, #FFCC70 0%, #C850C0, #4158D0  100%);
     height: 70px;
+    cursor: pointer;
 }
 
 .connect_button:hover {
@@ -281,45 +293,6 @@ li {
 .card > h3 {
     font-size: 1.2rem;
 }
-
-.skill_page {
-    background-color: #352E40;
-    height: 900px;
-    width: 100%;
-}
-
-.skill_box {
-    height: 900px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.skill_box > h1 {
-    color: white;
-}
-
-.itskills_box {
-    display: none;
-}
-
-.softskills_box {
-    display: none;
-}
-
-.language_box {
-    background-color: #F8F8F8;
-    height: 50rem;
-    width: 100rem;
-    border-radius: 3px;
-}
-
-.battery_img {
-    height: 50px;
-    width: 100px;
-}
-
 
 
 

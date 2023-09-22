@@ -61,5 +61,3 @@ document.addEventListener("mouseup", dragStop); //Let's stop card from sliding i
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-
-
